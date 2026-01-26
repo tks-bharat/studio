@@ -52,7 +52,7 @@ export default function Home() {
       </header>
       <main className="flex-grow p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
-          <Alert variant="destructive" className="mb-8">
+          <Alert variant="warning" className="mb-8">
             <AlertTriangle className="h-4 w-4" />
             <AlertTitle>Important Notice</AlertTitle>
             <AlertDescription>
