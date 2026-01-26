@@ -14,6 +14,13 @@ export default function Home() {
 
   const nextWebinar = upcomingWebinars[0];
 
+  const displayWebinars = [...webinars].sort((a, b) => {
+    if (a.isSponsored && !b.isSponsored) return -1;
+    if (!a.isSponsored && b.isSponsored) return 1;
+    // Fallback to date sort for the rest
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="py-8 px-4 md:px-8">
@@ -47,7 +54,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-foreground mb-8">Upcoming Webinars</h2>
           <ImportantInstructions />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
-            {webinars.map((webinar) => (
+            {displayWebinars.map((webinar) => (
               <WebinarCard key={webinar.id} webinar={webinar} />
             ))}
           </div>

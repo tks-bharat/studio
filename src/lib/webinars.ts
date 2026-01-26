@@ -13,6 +13,7 @@ export type Webinar = {
   overview: string;
   speaker: Speaker;
   registrationLink?: string;
+  isSponsored?: boolean;
 };
 
 // Function to get a future date for the countdown timer
@@ -164,7 +165,9 @@ This webinar provides leaders with a strategic lens on how capital can be deploy
     theme: 'AI Data Cloud',
     date: '2026-02-02T10:00:00.000Z',
     duration: '5-Day Virtual Program',
-    overview: `Join Snowflake for Discover AI, a free, 5-day virtual program designed to explore the possibilities of the AI Data Cloud. This series is for data professionals in the APAC region and features hands-on labs, case studies, and strategies to accelerate your AI journey.
+    overview: `This program is highly recommended for industry professionals as it focuses on the practical skills and technologies that industries are currently demanding.
+
+Join Snowflake for Discover AI, a free, 5-day virtual program designed to explore the possibilities of the AI Data Cloud. This series is for data professionals in the APAC region and features hands-on labs, case studies, and strategies to accelerate your AI journey.
 
 You will learn about new technologies like Snowflake Intelligence, Cortex, and Horizon, along with integrations with SAP, AWS, and Microsoft. The sessions will cover unifying data, building AI agents, governing data, and optimizing ML workflows.
 
@@ -180,5 +183,6 @@ Watch any 5 sessions to receive a certificate of attendance. Connect with expert
       title: 'Industry Leaders & Engineers',
     },
     registrationLink: 'https://www.snowflake.com/about/webinars/snowflake-discover-apac/',
+    isSponsored: true,
   },
 ];
