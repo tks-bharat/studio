@@ -73,6 +73,11 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
                   </a>
               </Button>
             )}
+            {webinar.id === '3' && (
+              <p className="text-sm text-muted-foreground text-center mt-4">
+                You will see the mail from Laura McCreedy in your inbox after registration.
+              </p>
+            )}
         </div>
 
       </div>
