@@ -5,6 +5,12 @@
       "description": "Photo of Dr. Evelyn Reed",
       "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTQwOTYzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman portrait"
+    },
+    {
+      "id": "speaker-2",
+      "description": "Photo of Nyah Macklin",
+      "imageUrl": "https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMGJsYWNrJTIwd29tYW4lMjBnbGFzc2VzfGVufDB8fHx8MTY4OTU0NjYxMXww&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "woman portrait glasses"
     }
   ]
 }

@@ -20,7 +20,6 @@ const TimeZoneDisplay = ({ date, timeZone, label }: { date: Date; timeZone: stri
 export function WebinarDetail({ webinar }: { webinar: Webinar }) {
   const speakerImage = findImageById(webinar.speaker.imageId);
   const webinarDate = new Date(webinar.date);
-  const registrationUrl = "https://go.neo4j.com/WBR-EDU-260129-Context-Engineering-APAC_Registration.html";
 
   return (
     <>
@@ -36,15 +35,15 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
           <div>
             <h3 className="text-xl font-semibold flex items-center gap-2 mb-3"><Globe className="text-accent w-5 h-5"/> Global Timings</h3>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                <TimeZoneDisplay date={webinarDate} timeZone="America/Los_Angeles" label="PDT" />
-                <TimeZoneDisplay date={webinarDate} timeZone="America/New_York" label="EDT" />
-                <TimeZoneDisplay date={webinarDate} timeZone="Europe/London" label="BST" />
+                <TimeZoneDisplay date={webinarDate} timeZone="Asia/Kolkata" label="IST" />
+                <TimeZoneDisplay date={webinarDate} timeZone="Asia/Singapore" label="SGT" />
                 <TimeZoneDisplay date={webinarDate} timeZone="Asia/Tokyo" label="JST" />
+                <TimeZoneDisplay date={webinarDate} timeZone="Australia/Sydney" label="AEDT" />
             </div>
           </div>
           <div>
             <h3 className="text-xl font-semibold">Overview</h3>
-            <p className="text-muted-foreground mt-2">{webinar.overview}</p>
+            <p className="text-muted-foreground mt-2 whitespace-pre-wrap">{webinar.overview}</p>
           </div>
           <KeyTopicsGenerator description={webinar.overview} />
         </div>
@@ -80,11 +79,13 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
                     <p className="text-sm text-muted-foreground">{webinar.speaker.title}</p>
                 </div>
             </div>
-             <Button asChild size="lg" className="w-full text-lg">
-                <a href={registrationUrl} target="_blank" rel="noopener noreferrer">
-                    Register Now
-                </a>
-            </Button>
+            {webinar.registrationLink && (
+              <Button asChild size="lg" className="w-full text-lg">
+                  <a href={webinar.registrationLink} target="_blank" rel="noopener noreferrer">
+                      Register Now
+                  </a>
+              </Button>
+            )}
         </div>
 
       </div>
