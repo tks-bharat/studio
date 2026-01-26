@@ -49,15 +49,33 @@ Register now to secure your spot.`,
   },
   {
     id: '2',
-    title: 'Advanced RAG Techniques',
-    theme: 'Generative AI',
-    date: getFutureDate(45),
-    duration: '75 Minutes',
-    overview: 'Dive deep into advanced Retrieval-Augmented Generation (RAG) techniques that go beyond the basics. This webinar covers strategies for optimizing retrieval, refining generation, and integrating knowledge graphs to build sophisticated, context-aware AI systems that can reason over private data.',
+    title: 'Build & Develop with AI Agents: A Cloud Technical Series',
+    theme: 'AI Agents & Generative AI',
+    date: '2026-01-28T10:00:00.000Z', // Corresponds to Jan 28
+    duration: '2-Day Technical Series',
+    overview: `Join us for a 2-day technical series on building and developing with AI Agents, with Day 1 on Jan 28 and Day 2 on Jan 29.
+
+Day 1 — Build AI Agents:
+Start with a welcome and move into sessions that define and demonstrate agentic systems, vector search, low/no-code customer agents, and a hands-on introduction to Gemini Pro.
+Key sessions include:
+- AI Agents: the next frontier (Dr. Soujanya Lanka)
+- From Prototype to Production: Vertex AI Vector Search 2.0 (Kaz Sato)
+- Live Lab — Introduction to Gemini Pro
+
+Day 2 — Develop with AI Agents:
+Focus shifts to infrastructure, Gemini 3 Pro, developer workflows (Gemini CLI), and live coding labs.
+Key sessions include:
+- AI-optimised infrastructure (Luka Debeljak)
+- Introducing Gemini 3 Pro (Catherine Wang)
+- The Future of Coding: Gemini Code Assist & CLI (Paul Datta)
+- Live Lab — Vibe Coding and Gemini CLI
+
+This OnBoard edition is ideal for developers, data engineers, cloud architects, and DevOps engineers in APAC with direct access to Google Cloud experts and labs.`,
     speaker: {
-      name: 'Dr. Evelyn Reed',
-      title: 'Principal AI Researcher',
+      name: 'Google Cloud Experts',
+      title: 'Various Speakers & Trainers',
     },
+    registrationLink: 'https://cloudonair.withgoogle.com/events/apac-cts-onboard?mkt_tok=ODA4LUdKVy0zMTQAAAGfibSCFqk5vqBNtZTcvLXXNumSwhmsPsxO4PI4xRt-rQlaDXbVrle4_ChPlkKS_4n-vE-cGb9TsoBYFHAlvYeXf6EpotgP394kZT_1UUOwpBE3xKJ0hMk',
   },
   {
     id: '3',
