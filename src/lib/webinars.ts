@@ -1,3 +1,4 @@
+
 export type Speaker = {
   name: string;
   title: string;
@@ -51,7 +52,7 @@ Register now to secure your spot.`,
     id: '2',
     title: 'Build & Develop with AI Agents: A Cloud Technical Series',
     theme: 'AI Agents & Generative AI',
-    date: '2026-01-28T10:00:00.000Z', // Corresponds to Jan 28
+    date: '2026-01-28T10:00:00.000Z',
     duration: '2-Day Technical Series',
     overview: `Join us for a 2-day technical series on building and developing with AI Agents, with Day 1 on Jan 28 and Day 2 on Jan 29.
 
@@ -79,14 +80,37 @@ This OnBoard edition is ideal for developers, data engineers, cloud architects, 
   },
   {
     id: '3',
-    title: 'The Future of AI in Robotics',
-    theme: 'Robotics & Automation',
-    date: getFutureDate(70),
-    duration: '45 Minutes',
-    overview: 'Explore the symbiotic relationship between artificial intelligence and robotics. This talk will cover the latest breakthroughs in AI-driven robotic perception, manipulation, and navigation. We will showcase real-world examples of how smart robots are transforming industries from manufacturing to healthcare.',
+    title: 'How Can Leaders Turn AI from a Buzzword into an Organizational Advantage?',
+    theme: 'AI Strategy & Leadership',
+    date: '2026-01-28T17:00:00.000Z',
+    duration: '60 Minutes',
+    overview: `Part of the Executive Webinar Series by Columbia SIPA
+
+About the Webinar:
+Artificial intelligence is everywhere—but real impact remains elusive for many organizations. In this executive webinar, Professor Zachary Tumin introduces a powerful and practical framework for transforming AI from hype into measurable organizational value.
+
+Drawing from his concept of “AI Power,” Professor Tumin breaks down six core engines of AI capability—from pattern recognition to generative synthesis—and explains how leaders can strategically activate them. The session explores how platforms, data, people, and politics must work together to unlock AI’s full potential across institutions.
+
+This is not a technical deep dive, but a leader’s guide to making AI work in real-world organizational contexts.
+
+What You’ll Learn:
+- A clear, actionable framework for understanding AI Power
+- The six engines of AI—from pattern-making to generative synthesis
+- How leaders can align AI platforms, data infrastructure, and talent
+- Why organizational politics and governance matter for AI success
+- How to move beyond experimentation to real, sustained impact
+
+About the Series:
+This webinar is organized by the Columbia School of International and Public Affairs (SIPA) in partnership with Columbia+ and is part of a new global executive webinar series.
+
+Featuring distinguished SIPA faculty and practitioners, these complimentary live sessions bring policy insight and applied expertise directly to professionals worldwide—addressing urgent global challenges and their implications for leaders across:
+- Business
+- Government
+- Civil Society`,
     speaker: {
-      name: 'Dr. Evelyn Reed',
-      title: 'Principal AI Researcher',
+      name: 'Robert Zachary Tumin',
+      title: 'Adjunct Professor of International and Public Affairs, Columbia University | SIPA',
     },
+    registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/JxjWi4aTT7ukGFo3-53Vlw#/registration',
   },
 ];
