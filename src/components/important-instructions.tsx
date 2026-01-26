@@ -10,9 +10,9 @@ export function ImportantInstructions() {
           <span>Important Registration Instructions</span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4 text-muted-foreground">
+      <CardContent className="space-y-6 text-muted-foreground">
         <div>
-          <h4 className="font-semibold text-foreground mb-2">When Registering:</h4>
+          <h4 className="font-semibold text-foreground mb-2">For Most Webinars (e.g., Columbia University)</h4>
           <ul className="list-disc pl-5 space-y-1">
             <li>
               <strong>Company Name:</strong> Please enter your full institute name.
@@ -24,6 +24,26 @@ export function ImportantInstructions() {
               <strong>Designation/Job Title:</strong> Enter "UG Student" or "PG Student". If there is a dropdown, please select "Student".
             </li>
           </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold text-foreground mb-2">For the Snowflake "Discover AI" Webinar:</h4>
+           <ul className="list-disc pl-5 space-y-1">
+                <li>
+                    <strong>Company Name:</strong> Enter your full institute name.
+                </li>
+                <li>
+                    <strong>Business Email Address:</strong> Use your official institute email address.
+                </li>
+                <li>
+                    <strong>Job Title:</strong> Enter "UG Student".
+                </li>
+                 <li>
+                    <strong>Industry:</strong> Select "Technology".
+                </li>
+                <li>
+                    <strong>Checkboxes:</strong> Tick all the daily session checkboxes. You can leave the final checkbox for repeat communications unticked.
+                </li>
+            </ul>
         </div>
         <div>
           <h4 className="font-semibold text-foreground mb-2">General Webinar Guidelines:</h4>
