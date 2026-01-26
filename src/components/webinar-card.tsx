@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Webinar } from '@/lib/webinars';
 import { findImageById } from '@/lib/placeholder-images';
-import { CalendarDays, Clock, Users } from 'lucide-react';
+import { CalendarDays, Clock } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { WebinarDetail } from './webinar-detail';
 import { cn } from '@/lib/utils';
+import { ScrollArea } from './ui/scroll-area';
 
 export function WebinarCard({ webinar }: { webinar: Webinar }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -60,8 +61,12 @@ export function WebinarCard({ webinar }: { webinar: Webinar }) {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-3xl bg-background/80 backdrop-blur-xl border-primary/30">
-        <WebinarDetail webinar={webinar} />
+      <DialogContent className="sm:max-w-3xl bg-background/80 backdrop-blur-xl border-primary/30 p-0">
+        <ScrollArea className="max-h-[90vh]">
+          <div className="p-6">
+            <WebinarDetail webinar={webinar} />
+          </div>
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   );

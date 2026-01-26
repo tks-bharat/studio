@@ -5,11 +5,11 @@ import { Webinar } from "@/lib/webinars";
 import { findImageById } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
-import { CalendarDays, Clock, Globe, User } from "lucide-react";
+import { CalendarDays, Clock, Globe } from "lucide-react";
 import { KeyTopicsGenerator } from "./key-topics-generator";
 
 const TimeZoneDisplay = ({ date, timeZone, label }: { date: Date; timeZone: string; label: string }) => (
-  <div className="flex flex-col items-center justify-center p-3 rounded-lg bg-primary/10 text-center">
+  <div className="flex flex-1 flex-col items-center justify-center p-3 rounded-lg bg-primary/10 text-center min-w-[110px]">
     <p className="text-lg font-semibold text-foreground">
       {date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone, hour12: true })}
     </p>
@@ -34,7 +34,7 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
         <div className="md:col-span-2 space-y-6">
           <div>
             <h3 className="text-xl font-semibold flex items-center gap-2 mb-3"><Globe className="text-accent w-5 h-5"/> Global Timings</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="flex flex-wrap gap-2">
                 <TimeZoneDisplay date={webinarDate} timeZone="Asia/Kolkata" label="IST" />
                 <TimeZoneDisplay date={webinarDate} timeZone="Asia/Singapore" label="SGT" />
                 <TimeZoneDisplay date={webinarDate} timeZone="Asia/Tokyo" label="JST" />
