@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "speaker-1",
+      "description": "Photo of Dr. Evelyn Reed",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTQwOTYzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    }
+  ]
 }
