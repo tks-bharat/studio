@@ -41,7 +41,7 @@ export function ImportantInstructions() {
                     <strong>Industry:</strong> Select "Technology".
                 </li>
                 <li>
-                    <strong>Checkboxes:</strong> Tick all the daily session checkboxes. You can leave the final checkbox for repeat communications unticked.
+                    <strong>Checkboxes:</strong> Tick all the daily session checkboxes. You can leave the final checkbox for repeat communications unticked for all days. Do ensure you tick all.
                 </li>
             </ul>
         </div>
