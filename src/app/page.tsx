@@ -1,9 +1,10 @@
 import { webinars, Webinar } from '@/lib/webinars';
 import { WebinarCard } from '@/components/webinar-card';
 import { CountdownTimer } from '@/components/countdown-timer';
-import { BrainCircuit } from 'lucide-react';
+import { BrainCircuit, AlertTriangle } from 'lucide-react';
 import { SiteCredits } from '@/components/site-credits';
 import { ImportantInstructions } from '@/components/important-instructions';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 
 export default function Home() {
   const now = new Date();
@@ -51,6 +52,13 @@ export default function Home() {
       </header>
       <main className="flex-grow p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
+          <Alert variant="destructive" className="mb-8">
+            <AlertTriangle className="h-4 w-4" />
+            <AlertTitle>Important Notice</AlertTitle>
+            <AlertDescription>
+              Currently, registration is only for FinTech Society members, and the list has been shared with them. If anyone is found guilty of violating this, their sessions will be cancelled, and they will be expelled from the society due to our no-tolerance policy.
+            </AlertDescription>
+          </Alert>
           <h2 className="text-3xl font-bold text-foreground mb-8">Upcoming Webinars</h2>
           <ImportantInstructions />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
