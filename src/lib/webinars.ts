@@ -15,6 +15,7 @@ export type Webinar = {
   speaker: Speaker;
   registrationLink?: string;
   isSponsored?: boolean;
+  badgeText?: string;
 };
 
 // Function to get a future date for the countdown timer
@@ -187,5 +188,6 @@ Watch any 5 sessions to receive a certificate of attendance. Connect with expert
     },
     registrationLink: 'https://www.snowflake.com/about/webinars/snowflake-discover-apac/',
     isSponsored: true,
+    badgeText: 'Certificate',
   },
 ];

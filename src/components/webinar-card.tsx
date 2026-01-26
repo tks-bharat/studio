@@ -52,7 +52,9 @@ export function WebinarCard({ webinar }: { webinar: Webinar }) {
             )}>
               <div>
                 {webinar.isSponsored && (
-                  <Badge className="mb-2 border-yellow-400/50 bg-yellow-400/10 text-yellow-300">Sponsored</Badge>
+                  <Badge className="mb-2 border-yellow-400/50 bg-yellow-400/10 text-yellow-300">
+                    {webinar.badgeText || 'Sponsored'}
+                  </Badge>
                 )}
                 <p className={cn(
                   "font-semibold",
