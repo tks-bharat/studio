@@ -30,7 +30,9 @@ export function ImportantInstructions() {
           <ul className="list-disc pl-5 space-y-1">
             <li>Ensure you have a stable internet connection for the best experience.</li>
             <li>Join the webinar a few minutes early to test your audio and video.</li>
-            <li>Use the Q&A feature to ask questions.</li>
+            <li>
+              Use the Q&A feature to ask questions. The Q&A mode depends on the host of the webinar; sometimes it may not be enabled.
+            </li>
             <li>Be respectful and professional in all communications.</li>
           </ul>
         </div>
