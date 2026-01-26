@@ -30,8 +30,13 @@ export default function Home() {
             </p>
           </div>
           {nextWebinar && (
-            <div className="flex flex-col items-center gap-2">
-              <h2 className="text-sm font-semibold uppercase tracking-widest text-accent">Next Webinar Starts In</h2>
+            <div className="flex flex-col items-center gap-2 text-center max-w-sm">
+              <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+                Next webinar starts in
+              </p>
+              <h2 className="text-lg font-bold text-foreground leading-tight">
+                {nextWebinar.title}
+              </h2>
               <CountdownTimer targetDate={nextWebinar.date} />
             </div>
           )}
