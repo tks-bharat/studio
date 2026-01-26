@@ -1,7 +1,6 @@
 export type Speaker = {
   name: string;
   title: string;
-  imageId: string;
 };
 
 export type Webinar = {
@@ -45,7 +44,6 @@ Register now to secure your spot.`,
     speaker: {
       name: 'Nyah Macklin',
       title: 'Senior Developer Advocate, Neo4j',
-      imageId: 'speaker-2',
     },
     registrationLink: 'https://go.neo4j.com/WBR-EDU-260129-Context-Engineering-APAC_Registration.html',
   },
@@ -59,7 +57,6 @@ Register now to secure your spot.`,
     speaker: {
       name: 'Dr. Evelyn Reed',
       title: 'Principal AI Researcher',
-      imageId: 'speaker-1',
     },
   },
   {
@@ -72,7 +69,6 @@ Register now to secure your spot.`,
     speaker: {
       name: 'Dr. Evelyn Reed',
       title: 'Principal AI Researcher',
-      imageId: 'speaker-1',
     },
   },
 ];

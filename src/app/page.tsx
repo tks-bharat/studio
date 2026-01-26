@@ -2,6 +2,7 @@ import { webinars, Webinar } from '@/lib/webinars';
 import { WebinarCard } from '@/components/webinar-card';
 import { CountdownTimer } from '@/components/countdown-timer';
 import { BrainCircuit } from 'lucide-react';
+import { SiteCredits } from '@/components/site-credits';
 
 export default function Home() {
   const now = new Date();
@@ -46,7 +47,8 @@ export default function Home() {
         </div>
       </main>
       <footer className="text-center p-6 text-muted-foreground text-sm">
-        <p>&copy; {new Date().getFullYear()} Global AI Connect. All rights reserved.</p>
+        <SiteCredits />
+        <p className="mt-8">&copy; {new Date().getFullYear()} Global AI Connect. All rights reserved.</p>
       </footer>
     </div>
   );
