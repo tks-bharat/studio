@@ -12,6 +12,27 @@ import { Badge } from './ui/badge';
 export function WebinarCard({ webinar }: { webinar: Webinar }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+  const renderDate = () => {
+    if (!webinar.endDate) {
+      return new Date(webinar.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+    }
+    const startDate = new Date(webinar.date);
+    const endDate = new Date(webinar.endDate);
+    const startMonth = startDate.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+    const endMonth = endDate.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+
+    if (startMonth === endMonth && startDate.getUTCFullYear() === endDate.getUTCFullYear()) {
+      return `${startMonth} ${startDate.getUTCDate()}-${endDate.getUTCDate()}, ${startDate.getUTCFullYear()}`;
+    }
+
+    const startFormat: Intl.DateTimeFormatOptions = { month: 'short', day: 'numeric', timeZone: 'UTC' };
+    if (startDate.getUTCFullYear() !== endDate.getUTCFullYear()) {
+        startFormat.year = 'numeric';
+    }
+
+    return `${startDate.toLocaleDateString('en-US', startFormat)} - ${endDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}`;
+  };
+
   return (
     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
       <DialogTrigger asChild>
@@ -41,7 +62,7 @@ export function WebinarCard({ webinar }: { webinar: Webinar }) {
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CalendarDays className="w-4 h-4" />
-                <span>{new Date(webinar.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span>
+                <span>{renderDate()}</span>
               </div>
             </div>
 

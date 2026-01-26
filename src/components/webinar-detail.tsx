@@ -19,6 +19,27 @@ const TimeZoneDisplay = ({ date, timeZone, label }: { date: Date; timeZone: stri
 export function WebinarDetail({ webinar }: { webinar: Webinar }) {
   const webinarDate = new Date(webinar.date);
 
+  const renderDetailDate = () => {
+    if (!webinar.endDate) {
+      return new Date(webinar.date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+    }
+    const startDate = new Date(webinar.date);
+    const endDate = new Date(webinar.endDate);
+    const startMonth = startDate.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+    const endMonth = endDate.toLocaleDateString('en-US', { month: 'long', timeZone: 'UTC' });
+
+    if (startMonth === endMonth && startDate.getUTCFullYear() === endDate.getUTCFullYear()) {
+      return `${startMonth} ${startDate.getUTCDate()}-${endDate.getUTCDate()}, ${startDate.getUTCFullYear()}`;
+    }
+    
+    const startFormat: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', timeZone: 'UTC' };
+    if (startDate.getUTCFullYear() !== endDate.getUTCFullYear()) {
+        startFormat.year = 'numeric';
+    }
+
+    return `${startDate.toLocaleDateString('en-US', startFormat)} to ${endDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}`;
+  };
+
   return (
     <>
       <DialogHeader>
@@ -52,7 +73,7 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
                 <div className="space-y-3 text-sm">
                     <div className="flex items-center gap-3">
                         <CalendarDays className="w-4 h-4 text-accent flex-shrink-0" />
-                        <span className="text-foreground">{webinarDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</span>
+                        <span className="text-foreground">{renderDetailDate()}</span>
                     </div>
                     <div className="flex items-center gap-3">
                         <Clock className="w-4 h-4 text-accent flex-shrink-0" />

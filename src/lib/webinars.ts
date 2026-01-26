@@ -9,6 +9,7 @@ export type Webinar = {
   title: string;
   theme: string;
   date: string; // ISO 8601 format
+  endDate?: string;
   duration: string;
   overview: string;
   speaker: Speaker;
@@ -54,6 +55,7 @@ Register now to secure your spot.`,
     title: 'Build & Develop with AI Agents: A Cloud Technical Series',
     theme: 'AI Agents & Generative AI',
     date: '2026-01-28T10:00:00.000Z',
+    endDate: '2026-01-29T10:00:00.000Z',
     duration: '2-Day Technical Series',
     overview: `Join us for a 2-day technical series on building and developing with AI Agents.
 
@@ -164,6 +166,7 @@ This webinar provides leaders with a strategic lens on how capital can be deploy
     title: 'DISCOVER AI: Explore your potential with the AI Data Cloud',
     theme: 'AI Data Cloud',
     date: '2026-02-02T10:00:00.000Z',
+    endDate: '2026-02-06T10:00:00.000Z',
     duration: '5-Day Virtual Program',
     overview: `This program is highly recommended for industry professionals as it focuses on the practical skills and technologies that industries are currently demanding.
 
