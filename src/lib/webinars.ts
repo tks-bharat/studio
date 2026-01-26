@@ -86,27 +86,11 @@ This OnBoard edition is ideal for developers, data engineers, cloud architects, 
     duration: '60 Minutes',
     overview: `Part of the Executive Webinar Series by Columbia SIPA
 
-About the Webinar:
 Artificial intelligence is everywhere—but real impact remains elusive for many organizations. In this executive webinar, Professor Zachary Tumin introduces a powerful and practical framework for transforming AI from hype into measurable organizational value.
 
 Drawing from his concept of “AI Power,” Professor Tumin breaks down six core engines of AI capability—from pattern recognition to generative synthesis—and explains how leaders can strategically activate them. The session explores how platforms, data, people, and politics must work together to unlock AI’s full potential across institutions.
 
-This is not a technical deep dive, but a leader’s guide to making AI work in real-world organizational contexts.
-
-What You’ll Learn:
-- A clear, actionable framework for understanding AI Power
-- The six engines of AI—from pattern-making to generative synthesis
-- How leaders can align AI platforms, data infrastructure, and talent
-- Why organizational politics and governance matter for AI success
-- How to move beyond experimentation to real, sustained impact
-
-About the Series:
-This webinar is organized by the Columbia School of International and Public Affairs (SIPA) in partnership with Columbia+ and is part of a new global executive webinar series.
-
-Featuring distinguished SIPA faculty and practitioners, these complimentary live sessions bring policy insight and applied expertise directly to professionals worldwide—addressing urgent global challenges and their implications for leaders across:
-- Business
-- Government
-- Civil Society`,
+This is not a technical deep dive, but a leader’s guide to making AI work in real-world organizational contexts.`,
     speaker: {
       name: 'Robert Zachary Tumin',
       title: 'Adjunct Professor of International and Public Affairs, Columbia University | SIPA',
@@ -121,34 +105,53 @@ Featuring distinguished SIPA faculty and practitioners, these complimentary live
     duration: '60 Minutes',
     overview: `An Executive Webinar by Columbia SIPA
 
-🛡️ About the Webinar
-
 Artificial intelligence is rapidly reshaping the cybersecurity landscape—altering how attacks are launched, detected, and defended against. As AI capabilities accelerate, so do the risks, forcing organizations to rethink traditional security models.
 
 In this session, Professors Jay Healey and Greg Rattray cut through the hype to examine how AI is transforming cyber threats and defenses across industries. Drawing on deep expertise in cybersecurity policy, national security, and operational risk, they explore how AI is shifting the balance between attackers and defenders—and what leaders must do to stay ahead.
 
-This webinar provides a clear, strategic perspective on AI-driven cyber risk, moving beyond headlines to focus on real-world implications for modern security frameworks.
-
-🔍 What You’ll Learn
-
-- How AI is changing the nature of cyber threats and attack surfaces
-- The role of AI in strengthening cyber defenses and detection capabilities
-- Where AI increases risk—and where it creates strategic advantage
-- How modern security frameworks must adapt in an AI-driven world
-- What these shifts mean for leaders across public and private sectors
-
-🏛️ About the Series
-
-This webinar is organized by the Columbia School of International and Public Affairs (SIPA) in partnership with Columbia+, as part of a new global executive webinar series.
-
-These complimentary live sessions feature distinguished SIPA faculty and practitioners and are designed to bring leading policy perspectives and applied expertise directly to professionals worldwide—exploring urgent global challenges and their implications for leaders across:
-- Business
-- Government
-- Civil Society`,
+This webinar provides a clear, strategic perspective on AI-driven cyber risk, moving beyond headlines to focus on real-world implications for modern security frameworks.`,
     speaker: {
       name: 'Greg Rattray & Jason (Jay) Healey',
       title: 'Columbia University | SIPA',
     },
     registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/k4MRaDCZQ427uf0IGhss-w#/registration',
+  },
+  {
+    id: '5',
+    title: 'CSR: Now More Than Ever',
+    theme: 'CSR & Social Impact',
+    date: '2026-02-04T17:00:00.000Z',
+    duration: '60 Minutes',
+    overview: `An Executive Webinar by Columbia SIPA
+
+Corporate Social Responsibility (CSR) has evolved from a reputational add-on into a core strategic imperative. Today’s organizations are expected not only to generate profit, but also to create measurable social value—by design.
+
+In this session, Professor Stanley Litow examines how effective CSR programs drive long-term business value, strengthen stakeholder trust, and deliver real impact. Drawing on decades of leadership experience across the public and private sectors, he outlines the essential components of high-impact CSR and explains how next-generation CSR strategies can be embedded into organizational decision-making.
+
+This webinar offers leaders a practical framework for moving beyond symbolic initiatives toward results-driven, scalable CSR.`,
+    speaker: {
+      name: 'Stanley Litow',
+      title: 'Professor, Columbia University School of International and Public Affairs',
+    },
+    registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/9z4McUv1QGKkd2ewgZ_1UA#/registration',
+  },
+  {
+    id: '6',
+    title: 'The New Frontiers of Sustainable Investing: System-Level Investing & Blended Finance',
+    theme: 'Sustainable Finance',
+    date: '2026-02-19T21:00:00.000Z',
+    duration: '60 Minutes',
+    overview: `An Executive Webinar by Columbia SIPA
+
+As global challenges grow more complex, traditional investment approaches are no longer sufficient. Addressing climate risk, inequality, and systemic market failures requires new financial frameworks that operate at scale.
+
+In this session, Professor Caroline Flammer explores the emerging frontiers of sustainable investing, including system-level investing, blended finance, and business stewardship. She examines how investors and executives can navigate interconnected risks while unlocking opportunities in climate technology, renewable energy, and social innovation.
+
+This webinar provides leaders with a strategic lens on how capital can be deployed to generate both organizational value and system-wide impact.`,
+    speaker: {
+      name: 'Caroline Flammer',
+      title: 'A. Barton Hepburn Professor of Economics',
+    },
+    registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/Mqdt_H9HQ4aIc_CHZh4SLw#/registration',
   },
 ];

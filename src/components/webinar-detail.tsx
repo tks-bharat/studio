@@ -1,3 +1,4 @@
+
 "use client";
 
 import { Webinar } from "@/lib/webinars";
@@ -73,7 +74,7 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
                   </a>
               </Button>
             )}
-            {['3', '4'].includes(webinar.id) && (
+            {['3', '4', '5', '6'].includes(webinar.id) && (
               <p className="text-sm text-muted-foreground text-center mt-4">
                 You will see the mail from Laura McCreedy in your inbox after registration.
               </p>
