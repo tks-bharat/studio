@@ -113,4 +113,42 @@ Featuring distinguished SIPA faculty and practitioners, these complimentary live
     },
     registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/JxjWi4aTT7ukGFo3-53Vlw#/registration',
   },
+  {
+    id: '4',
+    title: 'Cybersecurity in the Age of AI',
+    theme: 'Cybersecurity & AI',
+    date: '2026-01-29T20:00:00.000Z',
+    duration: '60 Minutes',
+    overview: `An Executive Webinar by Columbia SIPA
+
+🛡️ About the Webinar
+
+Artificial intelligence is rapidly reshaping the cybersecurity landscape—altering how attacks are launched, detected, and defended against. As AI capabilities accelerate, so do the risks, forcing organizations to rethink traditional security models.
+
+In this session, Professors Jay Healey and Greg Rattray cut through the hype to examine how AI is transforming cyber threats and defenses across industries. Drawing on deep expertise in cybersecurity policy, national security, and operational risk, they explore how AI is shifting the balance between attackers and defenders—and what leaders must do to stay ahead.
+
+This webinar provides a clear, strategic perspective on AI-driven cyber risk, moving beyond headlines to focus on real-world implications for modern security frameworks.
+
+🔍 What You’ll Learn
+
+- How AI is changing the nature of cyber threats and attack surfaces
+- The role of AI in strengthening cyber defenses and detection capabilities
+- Where AI increases risk—and where it creates strategic advantage
+- How modern security frameworks must adapt in an AI-driven world
+- What these shifts mean for leaders across public and private sectors
+
+🏛️ About the Series
+
+This webinar is organized by the Columbia School of International and Public Affairs (SIPA) in partnership with Columbia+, as part of a new global executive webinar series.
+
+These complimentary live sessions feature distinguished SIPA faculty and practitioners and are designed to bring leading policy perspectives and applied expertise directly to professionals worldwide—exploring urgent global challenges and their implications for leaders across:
+- Business
+- Government
+- Civil Society`,
+    speaker: {
+      name: 'Greg Rattray & Jason (Jay) Healey',
+      title: 'Columbia University | SIPA',
+    },
+    registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/k4MRaDCZQ427uf0IGhss-w#/registration',
+  },
 ];
