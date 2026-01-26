@@ -3,6 +3,7 @@ import { WebinarCard } from '@/components/webinar-card';
 import { CountdownTimer } from '@/components/countdown-timer';
 import { BrainCircuit } from 'lucide-react';
 import { SiteCredits } from '@/components/site-credits';
+import { ImportantInstructions } from '@/components/important-instructions';
 
 export default function Home() {
   const now = new Date();
@@ -39,6 +40,7 @@ export default function Home() {
       <main className="flex-grow p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-foreground mb-8">Upcoming Webinars</h2>
+          <ImportantInstructions />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-12">
             {webinars.map((webinar) => (
               <WebinarCard key={webinar.id} webinar={webinar} />
