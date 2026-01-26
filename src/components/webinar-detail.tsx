@@ -51,7 +51,7 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
                 <div className="space-y-3 text-sm">
                     <div className="flex items-center gap-3">
                         <CalendarDays className="w-4 h-4 text-accent flex-shrink-0" />
-                        <span className="text-foreground">{webinarDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                        <span className="text-foreground">{webinarDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</span>
                     </div>
                     <div className="flex items-center gap-3">
                         <Clock className="w-4 h-4 text-accent flex-shrink-0" />

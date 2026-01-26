@@ -29,7 +29,7 @@ export function WebinarCard({ webinar }: { webinar: Webinar }) {
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <CalendarDays className="w-4 h-4" />
-                <span>{new Date(webinar.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+                <span>{new Date(webinar.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}</span>
               </div>
             </div>
 
