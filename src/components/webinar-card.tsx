@@ -1,9 +1,7 @@
 "use client";
 
-import Image from 'next/image';
 import { useState } from 'react';
 import { Webinar } from '@/lib/webinars';
-import { findImageById } from '@/lib/placeholder-images';
 import { CalendarDays, Clock } from 'lucide-react';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { WebinarDetail } from './webinar-detail';
@@ -12,7 +10,6 @@ import { ScrollArea } from './ui/scroll-area';
 
 export function WebinarCard({ webinar }: { webinar: Webinar }) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const speakerImage = findImageById(webinar.speaker.imageId);
 
   return (
     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
@@ -38,16 +35,6 @@ export function WebinarCard({ webinar }: { webinar: Webinar }) {
 
             {/* Back Face */}
             <div className="absolute inset-0 rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] bg-card/50 backdrop-blur-lg border border-accent/20 p-6 flex flex-col items-center justify-center text-center">
-              {speakerImage && (
-                 <Image
-                  src={speakerImage.imageUrl}
-                  alt={speakerImage.description}
-                  width={80}
-                  height={80}
-                  data-ai-hint={speakerImage.imageHint}
-                  className="rounded-full border-2 border-accent"
-                />
-              )}
               <h4 className="font-bold text-lg mt-4">{webinar.speaker.name}</h4>
               <p className="text-muted-foreground">{webinar.speaker.title}</p>
               <div className="flex items-center gap-4 mt-4 text-sm">

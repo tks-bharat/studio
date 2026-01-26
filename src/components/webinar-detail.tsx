@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { Webinar } from "@/lib/webinars";
-import { findImageById } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { CalendarDays, Clock, Globe } from "lucide-react";
@@ -18,7 +16,6 @@ const TimeZoneDisplay = ({ date, timeZone, label }: { date: Date; timeZone: stri
 );
 
 export function WebinarDetail({ webinar }: { webinar: Webinar }) {
-  const speakerImage = findImageById(webinar.speaker.imageId);
   const webinarDate = new Date(webinar.date);
 
   return (
@@ -65,17 +62,7 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
             <div className="p-4 rounded-lg bg-card/80 border border-border">
                 <h3 className="font-semibold text-lg mb-4 text-center">About the Speaker</h3>
                 <div className="flex flex-col items-center text-center">
-                    {speakerImage && (
-                        <Image
-                        src={speakerImage.imageUrl}
-                        alt={speakerImage.description}
-                        width={80}
-                        height={80}
-                        data-ai-hint={speakerImage.imageHint}
-                        className="rounded-full border-2 border-accent mb-3"
-                        />
-                    )}
-                    <p className="font-bold text-foreground">{webinar.speaker.name}</p>
+                    <p className="font-bold text-foreground mt-3">{webinar.speaker.name}</p>
                     <p className="text-sm text-muted-foreground">{webinar.speaker.title}</p>
                 </div>
             </div>
