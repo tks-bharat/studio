@@ -33,7 +33,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="mt-2 text-lg text-muted-foreground">
-              Your portal to the future of artificial intelligence.
+              Your portal for students to connect with quality webinars from experts.
             </p>
           </div>
           {nextWebinar && (
