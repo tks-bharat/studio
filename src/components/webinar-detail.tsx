@@ -61,9 +61,11 @@ export function WebinarDetail({ webinar }: { webinar: Webinar }) {
             </div>
           </div>
           
-          <div className="p-3 rounded-lg bg-yellow-400/10 border border-yellow-400/50 text-yellow-300/90 text-sm font-medium">
-            <strong>Important:</strong> After registration, your confirmation email may go to your spam folder. Please check it to ensure you don't miss the webinar details.
-          </div>
+          {webinar.id === '7' && (
+            <div className="p-3 rounded-lg bg-yellow-400/10 border border-yellow-400/50 text-yellow-300/90 text-sm font-medium animate-blink">
+              <strong>Important:</strong> After registration, your confirmation email may go to your spam folder. Please check it to ensure you don't miss the webinar details.
+            </div>
+          )}
 
           <div>
             <h3 className="text-xl font-semibold">Overview</h3>
