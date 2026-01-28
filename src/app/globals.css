@@ -70,7 +70,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: radial-gradient(ellipse at top, hsl(var(--primary) / 0.1), transparent 70%), radial-gradient(ellipse at bottom, hsl(var(--accent) / 0.1), transparent 70%);
     background-attachment: fixed;
   }
 }
