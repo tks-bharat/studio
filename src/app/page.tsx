@@ -5,7 +5,7 @@ import { BrainCircuit, AlertTriangle } from 'lucide-react';
 import { SiteCredits } from '@/components/site-credits';
 import { ImportantInstructions } from '@/components/important-instructions';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import NeuralBackground from '@/components/ui/flow-field-background';
+import CyberneticGridShader from '@/components/ui/cybernetic-grid-shader';
 
 export default function Home() {
   const now = new Date();
@@ -25,13 +25,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="fixed inset-0 -z-10">
-        <NeuralBackground 
-            color="#00FFFF" // Accent color
-            trailOpacity={0.1}
-            speed={0.8}
-        />
-      </div>
+      <CyberneticGridShader />
       <header className="py-8 px-4 md:px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
