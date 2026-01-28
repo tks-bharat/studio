@@ -109,7 +109,7 @@ You'll learn:
     id: '4',
     title: 'Cybersecurity in the Age of AI',
     theme: 'Cybersecurity & AI',
-    date: '2026-01-29T20:00:00.000Z',
+    date: '2026-01-30T20:00:00.000Z',
     duration: '60 Minutes',
     overview: `Artificial intelligence is rapidly reshaping the cybersecurity landscape—altering how attacks are launched, detected, and defended against. As AI capabilities accelerate, so do the risks, forcing organizations to rethink traditional security models.
 
