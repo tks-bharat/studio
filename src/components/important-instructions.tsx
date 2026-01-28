@@ -1,9 +1,10 @@
+
 import { AlertCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function ImportantInstructions() {
   return (
-    <Card className="my-8 bg-primary/5 border-primary/20">
+    <Card className="my-8 bg-card/50 backdrop-blur-lg border-primary/20">
       <CardHeader>
         <CardTitle className="flex items-center gap-3 text-2xl text-primary">
           <AlertCircle className="w-6 h-6" />

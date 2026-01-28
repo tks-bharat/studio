@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -50,7 +51,7 @@ export function CountdownTimer({ targetDate }: { targetDate: string }) {
   }
 
   return (
-    <div className="flex items-center gap-2 md:gap-4 p-3 rounded-lg bg-primary/10 border border-primary/20">
+    <div className="flex items-center gap-2 md:gap-4 p-3 rounded-lg bg-card/50 backdrop-blur-lg border border-primary/20">
       <TimeUnit value={timeLeft.days} label="Days" />
       <div className="text-3xl font-bold text-primary/50">:</div>
       <TimeUnit value={timeLeft.hours} label="Hours" />
