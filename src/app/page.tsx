@@ -37,7 +37,7 @@ export default function Home() {
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-3">
               <BrainCircuit className="w-10 h-10 text-primary" />
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent bg-gradient-size-200 animate-gradient-pan">
                 Global AI Connect
               </h1>
             </div>

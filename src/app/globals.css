@@ -73,3 +73,9 @@
     background-attachment: fixed;
   }
 }
+
+@layer utilities {
+  .bg-gradient-size-200 {
+    background-size: 200% 200%;
+  }
+}
