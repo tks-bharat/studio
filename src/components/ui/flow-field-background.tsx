@@ -88,8 +88,8 @@ export default function NeuralBackground({
         if (distance < interactionRadius) {
           const force = (interactionRadius - distance) / interactionRadius;
           // Push away
-          this.vx -= dx * force * 0.05;
-          this.vy -= dy * force * 0.05;
+          this.vx -= dx * force * 0.1;
+          this.vy -= dy * force * 0.1;
         }
 
         // 4. Apply Velocity & Friction
