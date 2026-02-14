@@ -164,30 +164,30 @@ This webinar provides leaders with a strategic lens on how capital can be deploy
   },
   {
     id: '7',
-    title: 'DISCOVER AI: Explore your potential with the AI Data Cloud',
-    theme: 'AI Data Cloud',
-    date: '2026-02-02T10:00:00.000Z',
-    endDate: '2026-02-06T10:00:00.000Z',
-    duration: '5-Day Virtual Program',
-    overview: `This program is highly recommended for industry professionals as it focuses on the practical skills and technologies that industries are currently demanding.
+    title: 'Building an AI-Powered Customer 360 with Braze and Snowflake Cortex',
+    theme: 'Customer 360 & AI',
+    date: '2026-02-25T03:00:00.000Z',
+    duration: 'Virtual Hands-on Lab',
+    overview: `In our previous sessions, we explored how to bridge the gap between Braze and Snowflake to track email engagement. But for the modern marketer, "opens" and "clicks" are only one piece of the puzzle. To drive true loyalty, you need a Customer 360 view—one that marries digital engagement with offline transactions, purchase history, and even customer sentiment.
 
-Join Snowflake for Discover AI, a free, 5-day virtual program designed to explore the possibilities of the AI Data Cloud. This series is for data professionals in the APAC region and features hands-on labs, case studies, and strategies to accelerate your AI journey.
+In this virtual hands-on lab, we will take your data strategy to the next level. You will learn how to unify Braze's real-time engagement data with "brick-and-mortar" POS transactions and predictive propensity scores. Using Snowflake Cortex, you will then build an AI-powered interface that allows your marketing team to query this 360-degree dataset using natural language.
 
-You will learn about new technologies like Snowflake Intelligence, Cortex, and Horizon, along with integrations with SAP, AWS, and Microsoft. The sessions will cover unifying data, building AI agents, governing data, and optimizing ML workflows.
+No more complex SQL for your marketing ops—just ask the data directly.
 
-- **Day 1 (Feb 2):** AI Strategy & SAP Integration
-- **Day 2 (Feb 3):** Customer Stories & Partner Solutions (Accenture, AWS)
-- **Day 3 (Feb 4):** AI-Ready Foundations (Lakehouse, Apache Iceberg, Snowflake Postgres)
-- **Day 4 (Feb 5):** Interactive Labs (Build AI Agents, GenAI Apps, M365 Copilot)
-- **Day 5 (Feb 6):** Governance, ROI, and Conversational AI/BI (QuickSight, Fivetran)
+What You Will Learn:
+- Data Unification: How to ingest and join Braze engagement data with external sources like POS (Point of Sale) and Purchase History inside Snowflake.
+- Customer 360 Architecture: Designing a "Golden Record" that connects digital behavior (Braze) with physical behavior (Store transactions).
+- Natural Language Insights: Implementing Snowflake Cortex to build a chatbot that answers complex questions like: "Which high-value users opened our last email but only purchase in-store?"
+- Sentiment & AI Analysis: Using LLMs to analyze long-form customer reviews and link sentiment to specific purchase behaviors.
+- Predictive Activation: Leveraging Propensity Scores (Churn vs. Purchase) to identify which segments should be pushed back into Braze for immediate re-engagement.
 
-Watch any 5 sessions to receive a certificate of attendance. Connect with experts in live Q&A sessions.`,
+IN COLLABORATION WITH Braze.`,
     speaker: {
-      name: 'Snowflake Experts',
-      title: 'Industry Leaders & Engineers',
+      name: 'Raymond Cai & Jayden Cheng',
+      title: 'Snowflake & Braze Partnerships',
     },
     registrationLink: 'https://www.snowflake.com/about/webinars/snowflake-discover-apac/',
     isSponsored: true,
-    badgeText: 'Certificate',
+    badgeText: 'Virtual Lab',
   },
 ];
