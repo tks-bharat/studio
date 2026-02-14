@@ -52,29 +52,6 @@ Register now to secure your spot.`,
     registrationLink: 'https://go.neo4j.com/WBR-EDU-260129-Context-Engineering-APAC_Registration.html',
   },
   {
-    id: '3',
-    title: 'How Can Leaders Turn AI from a Buzzword into an Organizational Advantage?',
-    theme: 'AI Strategy & Leadership',
-    date: '2026-01-28T17:00:00.000Z',
-    duration: '60 Minutes',
-    overview: `Artificial intelligence is everywhere—but real impact remains elusive for many organizations. In this executive webinar, Professor Zachary Tumin introduces a powerful and practical framework for transforming AI from hype into measurable organizational value.
-
-Drawing from his concept of “AI Power,” Professor Tumin breaks down six core engines of AI capability—from pattern recognition to generative synthesis—and explains how leaders can strategically activate them. The session explores how platforms, data, people, and politics must work together to unlock AI’s full potential across institutions.
-
-This is not a technical deep dive, but a leader’s guide to making AI work in real-world organizational contexts.
-
-You'll learn:
-- A clear, actionable framework for understanding AI Power
-- The six engines of AI—from pattern-making to generative synthesis
-- How leaders can align AI platforms, data infrastructure, and talent
-- Why organizational politics and governance matter for AI success`,
-    speaker: {
-      name: 'Robert Zachary Tumin',
-      title: 'Adjunct Professor of International and Public Affairs, Columbia University | SIPA',
-    },
-    registrationLink: 'https://columbiauniversity.zoom.us/meeting/register/JxjWi4aTT7ukGFo3-53Vlw#/registration',
-  },
-  {
     id: '4',
     title: 'Cybersecurity in the Age of AI',
     theme: 'Cybersecurity & AI',
@@ -99,7 +76,7 @@ You'll learn:
   },
   {
     id: '5',
-    title: 'CSR: Now More Than Ever',
+    title: 'CSR: Now More Ever',
     theme: 'CSR & Social Impact',
     date: '2026-02-04T17:00:00.000Z',
     duration: '60 Minutes',
