@@ -111,6 +111,6 @@ IN COLLABORATION WITH Braze.`,
     },
     registrationLink: 'https://www.snowflake.com/en/webinars/virtual-hands-on-lab/building-an-ai-powered-customer-360-with-braze-and-snowflake-cortex-2026-02-25/?utm_source=snowflake&utm_medium=email&utm_campaign=ap-en-promo-1-20260212&mkt_tok=MjUyLVJGTy0yMjcAAAGf7ufu_pt3ioYBu9AmPcU0q7qf1jHSlNkDSArouRsEQq7jkPouBvhlHgCAfOGpTWQbJ1D46XUe_GxckLWuU4mZGnmRihFM_E23d5-gQlOG5zQvW0_jYA',
     isSponsored: true,
-    badgeText: 'Virtual Lab',
+    badgeText: 'Snowflake AI',
   },
 ];
