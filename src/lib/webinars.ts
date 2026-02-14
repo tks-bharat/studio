@@ -29,29 +29,6 @@ const getFutureDate = (daysInFuture: number): string => {
 
 export const webinars: Webinar[] = [
   {
-    id: '1',
-    title: 'Effective Context Engineering Techniques for AI',
-    theme: 'Large Language Models',
-    date: '2026-01-29T03:30:00.000Z',
-    duration: '30 Minutes',
-    overview: `As AI continuously learns, models can lose important context over time. This leads to inconsistent outputs or difficulty reasoning across complex or connected information. Even the most advanced models are prone to misinterpretation or missing key details.
-
-That’s why context engineering is emerging as a critical discipline to shape how AI perceives, recalls, reasons, and explains information. In this webinar, we’ll explain why context provides a vital foundation for trustworthy, accurate, and explainable AI results, and how to build an effective context pipeline. We’ll cover techniques like connected memory, contextual retrieval, and graph-based knowledge representation that enable LLMs to establish reliable connections between information and draw logical conclusions.
-
-You’ll learn:  
-
-- Why AI systems need context to reason reliably and avoid misinterpretation
-- How context shapes reasoning, problem solving, and explainability in AI applications
-- Practical strategies for designing context pipelines that align AI outputs with real-world knowledge and user intent
-
-Register now to secure your spot.`,
-    speaker: {
-      name: 'Nyah Macklin',
-      title: 'Senior Developer Advocate, Neo4j',
-    },
-    registrationLink: 'https://go.neo4j.com/WBR-EDU-260129-Context-Engineering-APAC_Registration.html',
-  },
-  {
     id: '4',
     title: 'Cybersecurity in the Age of AI',
     theme: 'Cybersecurity & AI',
